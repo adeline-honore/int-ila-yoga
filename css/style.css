@@ -1,0 +1,327 @@
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXX       GLOBAL     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Parie 1 : global (redefinition de balises)*/
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body{
+	width: 100%;
+}
+
+header, main, footer, h1{
+	margin: 0 auto;
+	padding: 0;
+}
+
+/*XXXXXXXXX  FONT FAMILY   XXXXXXXXXXXX*/
+
+header nav, h1, th{
+	font-family: "Kaushan Script", "Arial", "Serif";
+}
+
+table, form, caption, h2, h3, h4, p, legend{
+	font-family: "Playfair Display", "Sans Serif";
+}
+
+/*XXXXXXXXX  TEXT ALIGN   XXXXXXXXXXXX*/
+
+header a, header, nav, strong, h1, h2, h4, .presentation article, caption, submit, legend, footer{
+	text-align: center;
+}
+
+/*XXXXXXXXX  FONT COLOR / SIZE    XXXXXXXXXXXX*/
+
+
+header, header a, h3, .presentation p, th, form input:last-child{
+	color: white;
+}
+
+h1{
+	font-size: 2em;
+}
+
+h2, caption{
+	font-size: 1.8em;
+}
+
+h2, .text p, table, form{
+	color: #34495E;
+	line-height: 1.7em;
+}
+
+h3{
+	font-size: 1.5em;
+}
+
+h4, legend{
+	font-size: 1.3em;
+}
+
+header a{
+	font-size: 1.5em;
+}
+
+h2, h4, caption{
+	font-weight: lighter;
+}
+
+a{
+	text-decoration: none;
+}
+
+footer{
+	font-size: 0.8em;
+}
+
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXX     LAYOUT     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Partie 2 : Layout (definition des éléments de structures)*/
+
+section{
+	padding: 30px auto;
+}
+
+.presentation article{
+	overflow: hidden;
+	display: inline-block;
+	vertical-align: top;
+	width: 33%;
+	padding: 0 1%;
+	font-weight: bolder;
+}
+
+.map{
+	width: 100%;
+}
+
+table, form{
+	width: 90%;
+	margin: 0 auto;
+	vertical-align: middle;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXX     MODULE    XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Partie 3 : module (definition des éléments internes)*/
+
+/*XXXXXXXXX  HEADER    XXXXXXXXXXXX*/
+
+h1{
+	padding-top: 100px;
+	height: 430px;
+	text-shadow: 1px 2px 3px rgba(0,0,0,0.5);
+}
+
+header nav{
+	height: 110px;
+	margin: 0 auto;
+}
+
+header a{
+	display: inline-block;
+	margin: 30px 20px;
+}
+
+header strong{
+	height: 40px;
+	display: block;
+	font-size: 1.2em;
+	padding: 10px 0;
+}
+
+/*XXXXXXXXX    INDEX /  MAIN     XXXXXXXXXXXX*/
+
+#article1, #article2{
+	display: inline-block;
+	padding: 50px 20px;
+}
+
+#article1{
+	border-bottom: 2px solid rgb(220, 206, 221);
+}
+
+#article1 img{
+	float: left;
+	margin-right: 15px;
+}
+
+#article2 img{
+	float: right;
+	margin-left: 15px;
+}
+
+.presentation{
+	padding: 30px 10px;
+	line-height: 1.5em;
+}
+
+.presentation img{
+	width: 220px;
+}
+
+/*XXXXXXXXX    CONTACT  / TABLE & FORM    XXXXXXXXXXXX*/
+
+caption{
+	color: #34495E;
+	font-size: 2em;
+	margin: 35px auto 25px auto;
+}
+
+th{
+	font-size: 1.6em;
+	text-align: left;
+}
+
+tbody td:first-child{
+	width: 30%;
+	text-align: left;
+	padding-left: 10px;
+}
+
+td:nth-first-child(n+1){
+	width: 60%;
+}
+
+tr:nth-last-child{
+	width: 10%;
+}
+
+tr{
+	height: 50px;
+}
+
+
+fieldset{
+	padding: 40px 0 35px 0;
+	margin: 50px auto 25px auto;
+}
+
+label{
+	margin-right: 40px;
+}
+
+select#how{
+	width: 90%;
+}
+
+/*XXXXXXXXX    FOOTER     XXXXXXXXXXXX*/
+
+footer{
+	padding-top: 10px;
+	height: 150px;
+	color: white;
+}
+
+footer img{
+	width: 40px;
+}
+
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXX    ETAT     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Partie 4 : état (definition des élémentS qui ont un état spécifique ou un changement d'état)*/
+
+.fas.fa-calendar-alt, .fas.fa-book, .far.fa-image, .fas.fa-envelope{
+	display: block;
+	vertical-align: top;
+}
+
+span{
+	text-transform: uppercase;
+}
+
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXX     THEME     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Parie 5 : theme (definition des couleurs et background)    */
+
+/*XXXXXXXXX    HEADER     XXXXXXXXXXXX*/
+
+header{
+	background: url(../img/fond.jpg);
+	background-position: 50% 65%;
+}
+
+header nav{
+	background: rgba(255, 255, 255, 0.5);
+}
+
+header strong{
+	background: rgba(255, 255, 255, 0.2);
+}
+
+/*XXXXXXXXX    INDEX   MAIN     XXXXXXXXXXXX*/
+
+.text{
+	background-color: white;
+}
+
+.presentation{
+	background: url(../img/background_section.jpg);
+	background-size: contain;
+	background-size: 200%;
+	background-repeat: no-repeat;
+	background-position: bottom; 
+}
+
+iframe{
+	width: 100%;
+	height: 460px;
+}
+
+/*XXXXXXXXX    CONTACT      XXXXXXXXXXXX*/
+
+table{
+	border-collapse: collapse;
+}
+
+th{
+	background: #C4A5DE;
+}
+
+td, form, fieldset{
+	border: 1px solid #E0E0E0;
+}
+
+form{
+	border: white;
+}
+
+table tr:nth-child(even){
+	background: #F3F3F3;
+}
+
+input#prenom, input#nom,input#email{
+	width: 180px;
+	background: white;
+	border: none;
+	border-bottom: 1px solid #E0E0E0;
+}
+
+input[list]{
+	background-color: #E0E0E0;
+}
+
+select{
+	background-color: white;
+}
+
+form input:last-child{
+	background-color: #8B5BC1;
+	padding: 5px 15px;
+}
+/*
+input#detente, input#medecin, input#amis, input#oui, input#non{
+	background: #E0E0E0;
+}*/
+
+/*XXXXXXXXX    FOOTER     XXXXXXXXXXXX*/
+
+footer{
+	background: rgb(141, 111, 209);
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"><!-- car caractères francais -->
+    <title>Ila Yoga</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Playfair+Display" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../normalize.css"><!--NORMALIZE CSS  V8.0.1  -->
+    <link rel="stylesheet" type="text/css" href="css/style.css"><!-- TOUJOURS TOUJOURS le dernier appelé -->
+</head>
+<body>
+	<header>
+		<nav>
+			<a href="#"><i class="fas fa-calendar-alt"></i>Agenda</a>
+			<a href="#"><i class="fas fa-book"></i>Livre d'or</a>
+			<a href="#"><i class="far fa-image"></i>Album photo</a>
+			<a href="contact.html"><i class="fas fa-envelope"></i>Nous contacter</a>
+		</nav>
+		<strong><span>offre promo: </span>Votre premier cours gratuit !</strong>
+		<a href="index.html"><h1>Bienvenue sur le site d'Ila Yoga</h1></a>
+	</header>
+	<main>
+		<table><!-- TABLEAU 1 -->
+			<caption>Réserver votre place pour le prochain cours de yoga du rire !</caption>
+			<thead>
+				<tr>
+					<th colspan="3">Yoga du rire avec Jaqueline (Paris)</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>05 Janvier 2016</td>
+					<td>15H30</td>
+					<td><a href="#">Réserver ce créneau</a></td>
+				</tr>
+				<tr>
+					<td>10 Janvier 2016</td>
+					<td>16H30</td>
+					<td><a href="#">Réserver ce créneau</a></td>
+				</tr>
+				<tr>
+					<td>15 Janvier 2016</td>
+					<td>15H30</td>
+					<td><a href="#">Réserver ce créneau</a></td>
+				</tr>
+				<tr>
+					<td>20 Janvier 2016</td>
+					<td>16H30</td>
+					<td><a href="#">Réserver ce créneau</a></td>
+				</tr>
+			</tbody>
+		</table>
+
+		<table><!-- TABLEAU 2 -->
+			<thead>
+				<tr>
+					<th colspan="3">Yoga du rire avec Roger (Marseille)</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>05 Janvier 2016</td>
+					<td>15H30</td>
+					<td><a href="#">Réserver ce créneau</a></td>
+				</tr>
+				<tr>
+					<td>10 Janvier 2016</td>
+					<td>16H30</td>
+					<td><a href="#">Réserver ce créneau</a></td>
+				</tr>
+				<tr>
+					<td>15 Janvier 2016</td>
+					<td>15H30</td>
+					<td><a href="#">Réserver ce créneau</a></td>
+				</tr>
+				<tr>
+					<td>20 Janvier 2016</td>
+					<td>16H30</td>
+					<td><a href="#">Réserver ce créneau</a></td>
+				</tr>
+			</tbody>
+		</table>
+
+		<h4>Pour valider votre réservation, compléter ce formulaire :</h4>
+		
+		<form><!-- FORMULAIRE -->
+			<fieldset><!-- groupement 1-->
+				<legend>Vos coordonnées</legend><!-- Titre du fieldset-->
+				
+				<label for="prenom">Votre prénom :</label>
+				<input type="text" name="prenom" id="prenom">
+
+				<label for="nom">Votre nom :</label>
+				<input type="text" name="nom" id="nom">
+
+				<label for="email">Votre mail :</label>
+				<input type="email" name="email" id="email">
+			</fieldset>
+
+			<fieldset><!-- groupement 2-->
+				<legend>Quelles sont les raisons de votre venue ?</legend>
+
+				<input type="checkbox" name="detente" id="detente"> <label for="detente">Besoin de me détentdre</label>
+
+				<input type="checkbox" name="medecin" id="medecin"> <label for="medecin">Mon médecin m'a conseillé de venir</label>
+
+				<input type="checkbox" name="amis" id="amis"> <label for="amis">Je veux tester avec des amis</label>
+			</fieldset>
+
+			<fieldset><!-- groupement 3-->
+				<legend>Voulez-vous souscrire à notre programme de fidélité ?</legend>
+
+				<input type="radio" name="souhait" value="oui" id="oui"> <label for="oui">Oui</label>
+				<input type="radio" name="souhait" value="non" id="non"> <label for="non">Non</label>
+			</fieldset>
+
+			<fieldset><!-- groupement 4-->
+				<legend>Comment avez-vous connu Ila Yoga ?</legend>
+				<select name="how" id="how">
+					<option value="internet">Par internet</option>
+					<option value="friends">Par des amis</option>
+					<option value="marketing">Publicité</option>
+				</select>
+			</fieldset>
+
+			<input type="submit" value="Envoyer" />
+
+		</form>
+	</main>
+	<footer>
+		<a href="#"><img src="../logowa.gif" alt="logo de la 3W academy"></a>
+		<p>apud Constantinopolim, ut supra rettulimus, populari quondam turbela discerpti. quo verissime referente quae Gallus egerat, damnis super praeteritis maerens</p>
+	</footer>
+</body>
+</html>
